@@ -18,8 +18,15 @@ import { useEffect, useState } from "react"; // Import hooks for state managemen
 import { RecentAppointments } from "../(components)/recent-appointments"; // Import RecentAppointments component
 
 export default function User() {
+  interface User {
+    username: string;
+    upcomingSessions: string;
+    todaySessions: string;
+    allAppointments:string;
+    // Add other properties as needed
+  }
   const router = useRouter();
-  const [user, setUser] = useState({}); // State to store user data
+  const [user, setUser] = useState<User | null>(null); // State to store user data
 
   useEffect(() => {
     // Function to fetch user data from the backend
@@ -62,12 +69,12 @@ export default function User() {
                     {user?.username}.
                   </div>
                   <p className="text-md text-muted-foreground pb-6 text-white">
-                    Need a Specialist? No problem! Let's Find One for You.
+                    {`Need a Specialist? No problem! Let's Find One for You`}.
                     <br />
-                    Tell us about your symptoms, and we'll match you with the
-                    best expert for your recovery.
+                    {`Tell us about your symptoms, and we'll match you with the
+                    best expert for your recovery.`}
                     <br />
-                    Simply choose a convenient time slot.
+                   {` Simply choose a convenient time slot.`}
                   </p>
                   <Button
                     onClick={() =>
@@ -126,7 +133,7 @@ export default function User() {
                   <CardTitle>Recent Appointments</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <RecentAppointments allAppointments={user.allAppointments} />
+                  <RecentAppointments allAppointments={user?.allAppointments} />
                 </CardContent>
               </Card>
             </div>
