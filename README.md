@@ -41,18 +41,18 @@ This is a specialized doctor recommendation and appointment booking system built
 ## Technologies Used
 
 - **Next.js**: Frontend framework for building React applications.
-- **Machine Learning**: Used for disease prediction based on symptoms.
+<!-- - **Machine Learning**: Used for disease prediction based on symptoms. -->
 - **Authentication**: Secure user authentication using JWT tokens.
 - **Database**: Store user, doctor, and appointment data in a secure database.
-- **Payment Gateway**: Integrate a payment gateway for handling appointment fees.
+<!-- - **Payment Gateway**: Integrate a payment gateway for handling appointment fees. -->
 
 ## Installation
 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/mahafujul/MedNexa.git
-cd MedNexa
+git clone https://github.com/mohamed-eg/Medical_serves-.git
+cd Medical_serves
 ```
 
 2. Install dependencies:
