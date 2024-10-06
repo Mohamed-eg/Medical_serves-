@@ -59,3 +59,4 @@ export default function SettingsLayout({ children }: Readonly<SettingsProps>) {
     </Layout>
   );
 }
+
