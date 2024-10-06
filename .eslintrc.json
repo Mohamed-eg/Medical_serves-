@@ -1,3 +1,7 @@
 {
+  "plugins": ["react-refresh"],
+  "rules": {
+    "react-refresh/only-export-components": "warn"  // or "error"
+  },
   "extends": "next/core-web-vitals"
 }

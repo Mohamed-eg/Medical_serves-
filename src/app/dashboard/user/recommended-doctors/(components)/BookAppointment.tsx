@@ -31,7 +31,7 @@ function BookAppointment({ doctorId }: any) {
     if (date != new Date()) {
       fetchAvailableSlots();
     }
-  }, [date]);
+  });
 
   // Function to fetch available slots for a specific date and doctor
   const fetchAvailableSlots = async () => {
