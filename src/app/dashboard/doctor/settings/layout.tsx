@@ -34,7 +34,7 @@ export default function SettingsLayout({ children }: Readonly<SettingsProps>) {
           Settings
         </h1>
         <div className="ml-auto flex items-center space-x-4">
-          <ThemeSwitch />
+    <ThemeSwitch/>
           <UserNav />
         </div>
       </LayoutHeader>
