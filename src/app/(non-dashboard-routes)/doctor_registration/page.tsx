@@ -40,7 +40,7 @@ import {
 } from "@/components/ui/popover";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { specializationCategoryList } from "@/data/specializationCategoryList";
+// import { specializationCategoryList } from "@/data/specializationCategoryList";
 import axios from "axios";
 import { toast } from "sonner";
 
@@ -339,12 +339,12 @@ function DoctorRegistration({}: Props) {
                                 !field.value && "text-muted-foreground"
                               )}
                             >
-                              {field.value
+                              {/* {field.value
                                 ? specializationCategoryList.find(
                                     (specialization) =>
                                       specialization.value === field.value
                                   )?.label
-                                : "Select specialization"}
+                                : "Select specialization"} */}
                               <CaretSortIcon className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                             </Button>
                           </FormControl>
@@ -360,7 +360,7 @@ function DoctorRegistration({}: Props) {
                             </CommandEmpty>
                             <CommandList>
                               <CommandGroup>
-                                {specializationCategoryList.map(
+                                {/* {specializationCategoryList.map(
                                   (specialization) => (
                                     <CommandItem
                                       value={specialization.label}
@@ -383,7 +383,7 @@ function DoctorRegistration({}: Props) {
                                       />
                                     </CommandItem>
                                   )
-                                )}
+                                )} */}
                               </CommandGroup>
                             </CommandList>
                           </Command>
